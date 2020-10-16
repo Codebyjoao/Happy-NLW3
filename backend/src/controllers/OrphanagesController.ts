@@ -53,12 +53,12 @@ export default{
             about,
             instructions,
             opening_hours,
-            open_on_weekends,
+            open_on_weekends: open_on_weekends == 'true',
             images
         }
 
         const schema = Yup.object().shape({
-            nome: Yup.string().required(),
+            name: Yup.string().required(),
             latitude: Yup.number().required(),
             longitude: Yup.number().required(),
             about: Yup.string().required().max(300),
