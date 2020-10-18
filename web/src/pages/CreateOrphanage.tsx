@@ -1,26 +1,26 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
-import { Map, Marker, TileLayer } from 'react-leaflet';
+import React, { ChangeEvent, FormEvent, useState } from "react"
+import { Map, Marker, TileLayer } from 'react-leaflet'
 import {LeafletMouseEvent} from 'leaflet'
 import api from "../services/api"
 import {useHistory} from 'react-router-dom'
 
 
-import { FiArrowLeft, FiPlus } from "react-icons/fi";
+import { FiArrowLeft, FiPlus } from "react-icons/fi"
 
 
-import '../styles/pages/create-orphanage.css';
+import '../styles/pages/create-orphanage.css'
 import Sidebar from '../components/Sidebar'
 import mapIcon from '../utils/mapicon'  
 
 export default function CreateOrphanage() {
   const history = useHistory()
 
-  const [name, setName] = useState(''); 
-  const [about, setAbout] = useState(''); 
-  const [instructions, setInstructions] = useState(''); 
-  const [opening_hours, setOpeningHours] = useState(''); 
+  const [name, setName] = useState('') 
+  const [about, setAbout] = useState('') 
+  const [instructions, setInstructions] = useState('') 
+  const [opening_hours, setOpeningHours] = useState('') 
   const [open_on_weekends, setOpenOnWekends] = useState(true)
-  const [images, setImages] = useState<File[]>([]);
+  const [images, setImages] = useState<File[]>([])
   const [previewImages, setPreviewImages] = useState<string[]>([])
 
   const [position, setPosition] = useState({latitude:0, longitude: 0})
@@ -188,7 +188,7 @@ export default function CreateOrphanage() {
         </form>
       </main>
     </div>
-  );
+  )
 }
 
-// return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
+// return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`

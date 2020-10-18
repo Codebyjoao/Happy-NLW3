@@ -1,10 +1,10 @@
-import React, {useState ,useEffect} from "react";
-import { FaWhatsapp } from "react-icons/fa";
-import { FiClock, FiInfo, FiArrowLeft } from "react-icons/fi";
-import { Map, Marker, TileLayer } from "react-leaflet";
+import React, {useState ,useEffect} from "react"
+import { FaWhatsapp } from "react-icons/fa"
+import { FiClock, FiInfo, FiArrowLeft } from "react-icons/fi"
+import { Map, Marker, TileLayer } from "react-leaflet"
 import {useParams} from 'react-router-dom'
 
-import '../styles/pages/orphanage.css';
+import '../styles/pages/orphanage.css'
 import Sidebar from '../components/Sidebar'
 import mapIcon from '../utils/mapicon'
 import api from "../services/api"
@@ -132,5 +132,5 @@ export default function Orphanage() {
         </div>
       </main>
     </div>
-  );
+  )
 }

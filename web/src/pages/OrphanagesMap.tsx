@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from  'react';
-import {Link } from 'react-router-dom';
+import React, {useEffect, useState} from  'react'
+import {Link } from 'react-router-dom'
 import { FiPlus, FiArrowRight} from 'react-icons/fi'
 import { Map, TileLayer, Marker, Popup} from 'react-leaflet'
 import mapIcon from '../utils/mapicon'
 
-import 'leaflet/dist/leaflet.css';
-import mapMarkerimg from '../images/map-marker.svg';
+import 'leaflet/dist/leaflet.css'
+import mapMarkerimg from '../images/map-marker.svg'
 
-import '../styles/pages/orphanages-map.css';
-import api from '../services/api';
+import '../styles/pages/orphanages-map.css'
+import api from '../services/api'
 
 interface Orphanage {
     id: number
@@ -74,4 +74,4 @@ function OrphanagesMap() {
     )
 }
 
-export default OrphanagesMap;
+export default OrphanagesMap
